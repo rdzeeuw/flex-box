@@ -1,0 +1,175 @@
+body {
+  font-family: 'Della Respira', serif;
+  font-size: 1.1em;
+  color: darkcyan;
+  background-color: rgb(217, 235, 252);
+  background-image: url("bg.jpg");
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  padding: 10px 40px 10px 40px;
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.navbar ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.navbar li,
+a {
+  display: inline;
+  padding: 10px 10px;
+  text-decoration: none;
+  padding: 0 10px;
+  color: whitesmoke;
+  font-size: 1.2em;
+}
+
+.navbar li a:hover {
+  background-color: #25cc8c31;
+  color: white;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #25cc8c;
+  color: white;
+  border-radius: 10px;
+}
+
+.main {
+  
+  
+  margin-top: 10px;
+  padding: 40px 40px;
+  width: 70%;
+  height: auto;
+  border: 3px solid darkcyan;
+  background-color: aliceblue
+}
+
+
+
+.main p {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.main h3 {
+  border-bottom: 3px dashed #25cc8c;
+  border-right: 3px dashed #25cc8c;
+}
+
+.main input, textarea {
+  display: block;
+  margin: 10px 0px;
+  min-width: 300px;
+  border: 1px solid darkcyan;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.main .button {
+  background: darkcyan;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.blog {
+  display: flex;
+  flex-flow: column wrap;
+  
+}
+
+.blogpost { 
+  width: 80%; 
+  border: 1px solid black; 
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.923);
+  justify-content: space-between;
+  
+}
+
+#blog2 {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  margin: 10px;
+  padding: 10px;
+}
+
+#blog4 {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1 {
+  margin: 10px;
+  align-items: flex-start;
+  margin-left: 200px;
+}
+
+.blog1 {
+  align-self: flex-end;
+  margin-right: 200px;
+}
+
+.blog p {
+  margin: 0 10px;
+  
+}
+
+
+
+/* Media querries */
+
+@media (max-width: 600px){
+  body{
+    font-size: 0.9em;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .navbar li, a {
+    display: block;
+  
+  }
+
+  
+
+  .blogpost {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) { 
+
+
+
+
+}
